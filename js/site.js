@@ -106,7 +106,7 @@
     const val = (n) => brief.elements[n].value.trim();
     const picks = () => $$('[data-pick][aria-pressed="true"]', brief).map((b) => b.textContent);
     const compose = () => {
-      const lines = ['Habari 360 Graphics!'];
+      const lines = ['Hello 360 Graphics!'];
       const p = picks();
       if (p.length) lines.push('I need: ' + p.join(', '));
       if (val('name')) lines.push('Name: ' + val('name'));
